@@ -2,6 +2,8 @@
 
 Situation-based Kannada phrasebook with voice playback and quizzes designed to help non-Kannada speakers learn and converse in everyday situations across Karnataka.
 
+🌐 **Live Demo**: [https://kannada-shakthi-hackathon.onrender.com](https://kannada-shakthi-hackathon.onrender.com)
+
 **Tech Stack**: Python (Flask), HTML5, CSS3, JavaScript, Web Speech API (TTS & Speech Synthesis).
 
 ## Features
@@ -9,6 +11,10 @@ Situation-based Kannada phrasebook with voice playback and quizzes designed to h
 - **Audio pronunciation**: Listen to native Kannada pronunciations.
 - **Interactive Quiz**: Test knowledge with real-time feedback.
 - **Search**: Fast lookup across English, Kannada script, and Romanized transliteration.
+
+## Live Application
+The application is live and hosted on Render:
+- **URL**: [https://kannada-shakthi-hackathon.onrender.com](https://kannada-shakthi-hackathon.onrender.com)
 
 ## Local Setup
 
@@ -25,8 +31,9 @@ Situation-based Kannada phrasebook with voice playback and quizzes designed to h
 
 ## Deployment on Render
 
-This project is ready to be hosted as a Web Service on [Render](https://render.com):
+This project is configured for deployment as a Web Service on [Render](https://render.com):
 
+- **Live URL**: [https://kannada-shakthi-hackathon.onrender.com](https://kannada-shakthi-hackathon.onrender.com)
 - **Runtime**: `Python`
 - **Build Command**: `pip install -r requirements.txt`
 - **Start Command**: `gunicorn app:app`
