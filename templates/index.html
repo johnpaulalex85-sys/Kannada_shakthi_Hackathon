@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kannada Saathi – speak Kannada where you need it</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&family=Noto+Sans+Kannada:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<header class="hero">
+  <div class="hero-kn" lang="kn">ಕನ್ನಡ</div>
+  <div class="hero-copy">
+    <h1>Kannada Saathi</h1>
+    <p>Pick a situation. Learn the exact phrases. Say them out loud.</p>
+    <input id="search" type="search" placeholder="Search a phrase, e.g. “pharmacy” or “eshtu”" aria-label="Search phrases">
+  </div>
+</header>
+
+<main>
+  <nav id="scenarios" aria-label="Situations"></nav>
+
+  <section id="results" hidden>
+    <h2>Search results</h2>
+    <div id="results-list" class="cards"></div>
+  </section>
+
+  <section id="learn">
+    <div class="bar">
+      <h2 id="scenario-title">Choose a situation</h2>
+      <button id="start-quiz" class="btn" hidden>Test myself</button>
+    </div>
+    <div id="phrases" class="cards"></div>
+  </section>
+
+  <section id="quiz" hidden>
+    <div class="bar"><h2>Quick quiz</h2><button id="quit-quiz" class="btn ghost">Back to phrases</button></div>
+    <div id="quiz-body"></div>
+  </section>
+</main>
+
+<footer>
+  <span id="streak"></span>
+  <span>Tip: voice playback uses your browser’s Kannada (kn-IN) voice. Install it in your device’s language settings if you hear nothing.</span>
+</footer>
+<script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
